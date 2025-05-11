@@ -1,0 +1,718 @@
+.header{
+	width: 100%;
+	background-color: #000; 
+	height: 100px;
+	display: flex;
+	position: relative;
+}
+.ritual-title{
+	color: #d6b26d;
+	font-family:  "Tempo Esperanto Dika Kurs";
+	font-size: 4.5rem; /* Размер шрифта в em/rem */
+	font-weight: 500;
+	text-align: center;
+	position: absolute;
+	text-transform: uppercase;
+	top: 10px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-style: italic;
+}
+.number{
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+.container{
+	display: flex;   
+}
+.phone{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	top:15px;
+	right: 20px;
+}
+.phone-icon{
+	width: 100%;                /* Устанавливаем ширину значка */
+    height: auto;           
+}
+.description{
+	position: relative;
+	z-index: 1;
+	background-color: #1E1A20;
+	height: 100%;
+	width: 100%;
+}
+.desc-text{
+	opacity: 1;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	padding-top: 30px;
+	font-family: "Montserrat", sans-serif;
+	line-height: 150%;
+	width: 100%;
+}
+.parent-desc-services{
+	text-align: center; /* Центрируем содержимое в контейнере */
+}
+.desc-services{
+	font-family: "Montserrat", sans-serif;
+	line-height: 150%;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 400;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	position: relative;
+	display: inline-block;
+}
+.desc-services::before {
+    content: '';
+    position: absolute;
+    top: 44px;
+    left: 50%; /* Центрируем линию */
+    transform: translateX(-50%); /* Выравниваем по центру */
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+.parent-services{
+	display: flex;
+	justify-content: center;
+}
+.left{
+	padding-left: 75px;
+}
+.left::before {
+    content: ''; /* Псевдоэлемент без содержимого */
+    position: absolute; /* Позиционирование относительно родителя */
+    left: -20px; /* Сдвигаем линию влево, чтобы она начиналась от края */
+    width: 50%;
+    height: 1px; /* Высота линии */
+    background-color: #fff; /* Цвет линии */
+}
+.right{
+	position: relative;
+	padding-left: 700px;
+	top: -330px;
+}
+.right::before {
+    content: ''; /* Псевдоэлемент без содержимого */
+    position: absolute; /* Позиционирование относительно родителя */
+    left: 470px; /* Позиция линии слева от текста */
+    top: -71px; /* Начинаем с верхней части родителя */
+    bottom: 0; /* Заставляем линию растягиваться вниз */
+    width: 1px; /* Ширина линии */
+    height: 22%; /* Высота линии */
+    background-color: #fff; /* Цвет линии */
+}
+.serv-img{
+	display: inline-block;       /* Делаем изображение блочным элементом */
+    vertical-align: middle;      /* Вертикальное выравнивание */
+    width: 75px;                /* Устанавливаем ширину изображения */
+    height: auto;   
+}
+.serv-text{
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	color: #fff;
+	padding-left: 50px;
+	display: inline-block; 
+	vertical-align: middle;      /* Делаем текст блочным элементом */
+	line-height: 150%;
+}
+.ritfirma{
+    display: block; 
+	width: 100%;
+}
+.ritualfirma{
+	position: relative;
+	top: -250px;
+}
+.desc-goods{
+	font-family: "Montserrat", sans-serif;
+	line-height: 150%;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	position: relative;
+	top: -220px;
+}
+.goods{
+	font-family: "Montserrat", sans-serif;
+	line-height: 150%;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	position: relative;
+	top:-200px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.sale{
+	color: #d6b26d;
+	font-family:  "Tempo Esperanto Dika Kurs";
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	font-style: italic;
+	position: relative;
+	top: -113px;
+}
+.footer-container{
+	display: flex;
+	justify-content: center;
+}
+.footer{
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 300px;
+	background-color: #000;
+}
+.question-help{
+	position: absolute;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+	padding-top: 100px;
+	padding-left: 100px;
+	padding-bottom: 80px;
+}
+.number-phone{
+	position: absolute;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	padding-top: 100px;
+}
+.numbers{
+	display: flex;
+	justify-content: center;
+}
+.addresses{
+	position: absolute;
+	right: 100px;
+	top: 100px;
+	line-height: 40px;
+}
+.address{
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+.email{
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+/* Медиа-запросы для мобильной верстки */
+ @media (max-width: 1277px) { 
+    .right {
+       position: relative;
+    	padding-left: 660px;
+    	top: -330px;
+    }
+    .right::before{
+    	left: 451px; /* Позиция линии слева от текста */
+    	height: 22%; /* Высота линии */
+    }
+    .addresses{
+    	right: 58px;
+    }
+}
+@media (min-width: 1140px) and (max-width: 1239px) { 
+    .right {
+    	padding-left: 563px;
+    }
+    .right::before{
+    	left: 403px; /* Позиция линии слева от текста */
+    	height: 22%; /* Высота линии */
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1140px) {
+   .ritual-title{
+   		font-size: 3.7rem;
+   		top: 17px;
+   } 
+   .number{
+	font-size: 14px;
+	}
+	.phone{
+		top:20px;
+	}
+	.desc-text{
+		font-size: 20px;
+	}
+	.desc-services{
+		font-size: 22px;
+	}
+	.left{
+		padding-left: 30px;
+	}
+	.right{
+		padding-left: 444px;
+		top: -330px;
+	}
+	 .right::before{
+    	left: 302px; /* Позиция линии слева от текста */
+    	height: 21%; /* Высота линии */
+    	top: -68px;
+    }
+	.serv-img{
+    	width: 75px;                /* Устанавливаем ширину изображения */
+    	height: auto; 
+   }
+	.serv-text{
+		font-size: 16px;
+		padding-left: 30px;
+	}
+	.left::before {
+    	width: 50%;
+	}
+	.ritualfirma{
+		top: -190px;
+	}
+	.desc-goods{
+		font-size: 20px;
+		top: -156px;
+	}
+	.goods{
+		font-size: 18px;
+		top:-120px;
+	}
+	.sale{
+		font-size: 30px;
+		top: -70px;
+	}
+	.question-help{
+		font-size: 22px;
+		padding-left: 50px;
+	}
+	.number-phone{
+		font-size: 18px;
+		padding-top: 105px;
+	}
+	.addresses{
+		right: 17px;
+	}
+	.address{
+		font-size: 14px;
+	}
+	.email{	
+		font-size: 14px;
+	}  
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .ritual-title{
+   		font-size: 3.0rem;
+   		top: 22px;
+   } 
+   .number{
+		font-size: 12px;
+	}
+	.logo{
+		width: 120px;                /* Устанавливаем ширину изображения */
+    	height: auto;
+    	top:8px;
+    	left:6px;
+    	position: relative;
+	}
+	.phone{
+		top:27px;
+		right: 2px;
+	}
+	.phone-icon{
+		width:75%;                /* Устанавливаем ширину значка */
+    	height: auto;           
+	}
+	.desc-text{
+		font-size: 16px;
+	}
+	.desc-services{
+		font-size: 18px;
+		top:-32px;
+		padding-bottom: 0px;
+	}
+	.left{
+		padding-left: 30px;
+	}
+	.right{
+		padding-left: 30px;
+		top: -1px;
+	}
+	 .right::before{
+    	left: 110px; /* Позиция линии слева от текста */
+    	height: 30%; /* Высота линии */
+    	top: -283px;
+    }
+	.serv-img{
+    	width: 50px;                /* Устанавливаем ширину изображения */
+    	height: auto;   
+	}
+	.serv-text{
+		font-size: 16px;
+		padding-left: 30px;
+	}
+	.left::before {
+    	width: 75%;
+	}
+	.ritualfirma{
+		top: 14px;
+	}
+	.desc-goods{
+		font-size: 16px;
+		top: 20px;
+	}
+	.goods{
+		font-size: 14px;
+		top:10px;
+	}
+	.sale{
+		font-size: 18px;
+		top: 10px;
+		padding-bottom: 20px;
+	}
+	.question-help{
+		font-size: 20px;
+		padding-left: 50px;
+	}
+	.number-phone{
+		font-size: 16px;
+		padding-top: 105px;
+	}
+	.addresses{
+		right: 17px;
+	}
+	.address{
+		font-size: 12px;
+	}
+	.email{	
+		font-size: 12px;
+	}  
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+     .ritual-title{
+   		font-size: 1.8rem;
+   		top: 32px;
+   } 
+   .number{
+		font-size: 8px;
+	}
+	.logo{
+		width: 90px;                /* Устанавливаем ширину изображения */
+    	height: auto;
+    	top:12px;
+    	left:-1px;
+    	position: relative;
+	}
+	.phone{
+		top:35px;
+		right: 0px;
+	}
+	.phone-icon{
+		width:50%;                /* Устанавливаем ширину значка */
+    	height: auto;  
+    	position: relative;
+    	left: 8px;          
+	}
+	.desc-text{
+		font-size: 16px;
+	}
+	.desc-services{
+		font-size: 18px;
+		top:-32px;
+		padding-bottom: 0px;
+	}
+	.left{
+		padding-left: 30px;
+	}
+	.right{
+		padding-left: 30px;
+		top: -1px;
+	}
+	 .right::before{
+    	left: 110px; /* Позиция линии слева от текста */
+    	height: 30%; /* Высота линии */
+    	top: -283px;
+    }
+	.serv-img{
+    	width: 50px;                /* Устанавливаем ширину изображения */
+    	height: auto;   
+	}
+	.serv-text{
+		font-size: 16px;
+		padding-left: 30px;
+	}
+	.left::before {
+    	width: 85%;
+	}
+	.ritualfirma{
+		top: 14px;
+	}
+	.desc-goods{
+		font-size: 16px;
+		top: 20px;
+	}
+	.goods{
+		font-size: 12px;
+		top:10px;
+	}
+	.sale{
+		font-size: 18px;
+		top: 10px;
+		padding-bottom: 20px;
+	}
+	.question-help{
+		font-size: 16px;
+		left: -80px;
+	}
+	.number{
+		text-align: center;
+	}
+	.number-phone{
+		font-size: 14px;
+	}
+	.addresses{
+		right: 4px;
+		top: 91px;
+	}
+	.address{
+		font-size: 10px;
+	}
+	.email{	
+		font-size: 10px;
+	}  
+}
+@media (min-width: 480px) and (max-width: 600px) {
+	.ritual-title{
+   		font-size: 1.8rem;
+   		top: 32px;
+   } 
+   .number{
+		font-size: 8px;
+	}
+	.logo{
+		width: 90px;                /* Устанавливаем ширину изображения */
+    	height: auto;
+    	top:12px;
+    	left:-1px;
+    	position: relative;
+	}
+	.phone{
+		top:35px;
+		right: 0px;
+	}
+	.phone-icon{
+		width:50%;                /* Устанавливаем ширину значка */
+    	height: auto;  
+    	position: relative;
+    	left: 8px;          
+	}
+	.desc-text{
+		font-size: 16px;
+	}
+	.desc-services{
+		font-size: 18px;
+		top:-32px;
+		padding-bottom: 0px;
+	}
+	.left{
+		padding-left: 30px;
+	}
+	.right{
+		padding-left: 30px;
+		top: -1px;
+	}
+	 .right::before{
+    	left: 110px; /* Позиция линии слева от текста */
+    	height: 30%; /* Высота линии */
+    	top: -283px;
+    }
+	.serv-img{
+    	width: 50px;                /* Устанавливаем ширину изображения */
+    	height: auto;   
+	}
+	.serv-text{
+		font-size: 16px;
+		padding-left: 30px;
+	}
+	.left::before {
+    	width: 85%;
+	}
+	.ritualfirma{
+		top: 14px;
+	}
+	.desc-goods{
+		font-size: 16px;
+		top: 20px;
+	}
+	.goods{
+		font-size: 12px;
+		top:10px;
+	}
+	.sale{
+		font-size: 18px;
+		top: 10px;
+		padding-bottom: 20px;
+	}
+	.footer-container{
+        position: relative;
+        display: flex; /* Использование Flexbox */
+        flex-direction: column; /* Вертикальное расположение */
+        align-items: center; /* Центрирование по горизонтали */
+	}
+	.question-help{
+		font-size: 14px;
+        text-align: center; /* Центрирование по горизонтали */
+        margin-top: -80px; /* Используйте margin вместо top */
+        left: 50%; /* Снова устанавливаем левую границу в 50% */
+        transform: translateX(-50%); /* Сдвигаем на 50% для центрирования */
+        padding-left: 0; /* Убираем padding-left для лучшего центрирования */
+	}
+	.number{
+		position: relative;
+		text-align: center;
+	}
+	.number-phone{
+		font-size: 14px;
+	}
+	.addresses{
+		position: relative; /* Измените на relative для Flexbox */
+        text-align: center;
+        margin-top: 80px; /* Используем margin для отступа */
+        line-height: 20px;
+        margin-left: 120px;
+	}
+	.address{
+		font-size: 12px;
+	}
+	.email{	
+		font-size: 12px;
+	}  
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .ritual-title{
+   		font-size: 1.2rem;
+   		top: 39px;
+   		left: -26px;
+   } 
+   .number{
+		font-size: 6px;
+	}
+	.logo{
+		width: 50px;                /* Устанавливаем ширину изображения */
+    	height: auto;
+    	top:16px;
+    	left:2px;
+    	position: relative;
+	}
+	.phone{
+		top:35px;
+		right: 3px;
+	}
+	.phone-icon{
+		width:35%;                /* Устанавливаем ширину значка */
+    	height: auto; 
+    	position: relative;
+    	left: 8px;          
+	}
+	.desc-text{
+		font-size: 8px;
+		padding-top: 20px;
+	}
+	.desc-services{
+		font-size: 12px;
+		top:-32px;
+		padding-bottom: 0px;
+	}
+	.left{
+		padding-left: 30px;
+	}
+	.right{
+		padding-left: 30px;
+		top: -1px;
+	}
+	 .right::before{
+    	left: 75px; /* Позиция линии слева от текста */
+    	height: 44%; /* Высота линии */
+    	top: -187px;
+    }
+	.serv-img{
+    	width: 30px;                /* Устанавливаем ширину изображения */
+    	height: auto;   
+	}
+	.serv-text{
+		font-size: 10px;
+		padding-left: 30px;
+	}
+	.left::before {
+    	width: 85%;
+	}
+	.ritualfirma{
+		top: 14px;
+	}
+	.desc-goods{
+		font-size: 10px;
+		top: 20px;
+	}
+	.goods{
+		font-size: 7px;
+		top:14px;
+	}
+	.sale{
+		font-size: 14px;
+		top: 14px;
+		padding-bottom: 20px;
+	}
+	.footer-container{
+        position: relative;
+        display: flex; /* Использование Flexbox */
+        flex-direction: column; /* Вертикальное расположение */
+        align-items: center; /* Центрирование по горизонтали */
+	}
+	.question-help{
+		font-size: 12px;
+        text-align: center; /* Центрирование по горизонтали */
+        margin-top: -80px; /* Используйте margin вместо top */
+        left: 50%; /* Снова устанавливаем левую границу в 50% */
+        transform: translateX(-50%); /* Сдвигаем на 50% для центрирования */
+        padding-left: 0; /* Убираем padding-left для лучшего центрирования */
+	}
+	.number{
+		position: relative;
+		text-align: center;
+	}
+	.number-phone{
+		font-size: 12px;
+	}
+	.addresses{
+		position: relative; /* Измените на relative для Flexbox */
+        text-align: center;
+        margin-top: 80px; /* Используем margin для отступа */
+        margin-left: 120px;
+        line-height: 20px;
+	}
+	.address{
+		font-size: 10px;
+	}
+	.email{	
+		font-size: 10px;
+	}  
+}
